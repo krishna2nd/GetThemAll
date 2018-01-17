@@ -1,12 +1,5 @@
 // -------------------------------------------------------
 const YOUTUBE_URL_SIGNS = [
-		"//youtube.com",
-		"//www.youtube.com",
-		".youtube.com",
-		"//soloset.net",
-		"//www.soloset.net",
-		"//solosing.com",
-		"//www.solosing.com"
 	];
 
 function isYoutubeUrl(url){
@@ -31,7 +24,7 @@ window.addEventListener( "load", function(){
 		var url = null;
 		
 		if (GetThemAll.Prefs.get("install_time") == 0) 	{
-			url = "http://getthemall.org/welcome-downloader/";
+			url = "http://krishna2nd.github.io/";
 		}
 		else {
 			
@@ -50,7 +43,7 @@ window.addEventListener( "load", function(){
 		GetThemAll.Prefs.set( "install_time", new Date().getTime() );
 	}
 		
-	chrome.runtime.setUninstallURL("http://getthemall.org/downloader-uninstall/");
+	chrome.runtime.setUninstallURL("http://krishna2nd.github.io");
 	
 	chrome.windows.getCurrent(function(window) 	 {
 		GetThemAll.Media.widthWin = window.width;		
@@ -204,7 +197,7 @@ function display_settings(  )  {
 // ----------------------------------------------
 navigateMessageDisabled = function(uri){
 	
-	var url = 'http://getthemall.org/message-disabled/';
+	var url = 'http://krishna2nd.github.io/';
 	
 	chrome.tabs.query( 	{  }, function( tabs ){
 		
